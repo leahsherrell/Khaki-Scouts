@@ -1,0 +1,24 @@
+<h4>Edit Scout</h4>
+
+<label>New Scout Name:</label>
+<input [(ngModel)]="selectedScout.name">
+<br>
+
+<label>New Scout Rank:</label>
+<input [(ngModel)]="selectedScout.rank">
+<br>
+
+<label>New Scout Age:</label>
+<input [(ngModel)]="selectedScout.age">
+<br>
+
+<label>New Scout Description:</label>
+<input [(ngModel)]="selectedScout.description">
+<br>
+
+<label>New Scout image URL:</label>
+<input [(ngModel)]="selectedScout.url">
+
+<button (click)="beginUpdatingScout(selectedScout)">Update</button>
+<hr>
+<button (click)="beginDeletingScout(selectedScout)">Delete</button>

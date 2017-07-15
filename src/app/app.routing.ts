@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { BaseComponent } from './base/base.component';
 import { AboutComponent }   from './about/about.component';
 import { ScoutsComponent }   from './scouts/scouts.component';
+import { ScoutDetailComponent }   from './scout-detail/scout-detail.component';
+import { MasterComponent }   from './master/master.component';
+
 
 const appRoutes: Routes = [
   {
@@ -16,6 +19,14 @@ const appRoutes: Routes = [
   {
     path: 'scouts',
     component: ScoutsComponent
+  },
+  {
+   path: 'scouts/:id',
+   component: ScoutDetailComponent
+ },
+  {
+    path: 'master',
+    component: MasterComponent
   }
 ];
 

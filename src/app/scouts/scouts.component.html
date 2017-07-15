@@ -1,3 +1,18 @@
-<p>
-  scouts works!
-</p>
+<h2>Khaki Scouts Troop</h2>
+
+<div *ngFor="let scout of scouts | async"  class="panel panel-default">
+
+  <div class="panel panel-default">
+    <img src="{{scout.url}}" alt="Picture">
+    <!-- <p>{{scout.url}}</p> -->
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(scout)"><em>{{scout.name}}</em> by {{scout.rank}}</h3>
+      <div *ngIf="currentRoute === '/master'">
+        {{scout.description}}
+        <hr>
+        <app-edit-scout [selectedScout]="scout"></app-edit-scout>
+      </div>
+    </div>
+  </div>
+
+</div>
