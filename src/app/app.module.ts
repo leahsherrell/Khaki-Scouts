@@ -22,7 +22,6 @@ export const firebaseConfig = {
   storageBucket: masterFirebaseConfig.storageBucket
 };
 
-
 @NgModule({
   declarations: [
     AppComponent,
