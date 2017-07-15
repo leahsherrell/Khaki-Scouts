@@ -1,6 +1,7 @@
 <h2>Troop</h2>
 
 <div *ngFor="let scout of scouts | async"  class="panel panel-default">
+  <img src="{{scout.url}}" alt="scout photo">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(scout)">{{scout.name}}</h3>
     <h4><em>{{scout.rank}}</em></h4>
