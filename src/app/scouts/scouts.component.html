@@ -6,7 +6,8 @@
     <img src="{{scout.url}}" alt="Picture">
     <!-- <p>{{scout.url}}</p> -->
     <div class="panel-body">
-      <h3 (click)="goToDetailPage(scout)"><em>{{scout.name}}</em> by {{scout.rank}}</h3>
+      <h3 (click)="goToDetailPage(scout)">{{scout.name}}</h3>
+      <h4><em>{{scout.rank}}</em></h4>
       <div *ngIf="currentRoute === '/master'">
         {{scout.description}}
         <hr>
