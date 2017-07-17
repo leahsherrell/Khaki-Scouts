@@ -1,14 +1,18 @@
-<h2>Troop Members</h2>
+<div class="container">
+    
 
-<div *ngFor="let scout of scouts | async"  class="panel panel-default">
-  <img src="{{scout.url}}" alt="scout photo">
-  <div class="panel-body">
-    <h3 (click)="goToDetailPage(scout)">{{scout.name}}</h3>
-    <h4><em>{{scout.rank}}</em></h4>
-    <div *ngIf="currentRoute === '/master'">
-      {{scout.description}}
-      <hr>
-      <app-edit-scout [selectedScout]="scout"></app-edit-scout>
+  <h2>Troop Members</h2>
+
+  <div *ngFor="let scout of scouts | async"  class="panel panel-default">
+    <img src="{{scout.url}}" alt="scout photo">
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(scout)">{{scout.name}}</h3>
+      <h4><em>{{scout.rank}}</em></h4>
+      <div *ngIf="currentRoute === '/master'">
+        {{scout.description}}
+        <hr>
+        <app-edit-scout [selectedScout]="scout"></app-edit-scout>
+      </div>
     </div>
   </div>
 </div>
