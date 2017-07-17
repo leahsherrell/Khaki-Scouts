@@ -1,19 +1,17 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Khaki Scouts</a>
+      <a class="navbar-brand" routerLink=""><img src="assets/img/raccoon.png" alt="logo"></a>
     </div>
+    <h1>{{title}}</h1>
     <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="scouts">Scouts</a></li>
-      <li><a routerLink="about">About</a></li>
+      <li><a routerLink="scouts">Troop 55</a></li>
+      <li><a routerLink="about">Moonrise Kingdom</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="container">
-  <h1>{{title}}</h1>
   <router-outlet></router-outlet>
-</div>
 
 <footer class="footer">
   <div class="container">
